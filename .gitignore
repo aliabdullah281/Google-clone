@@ -7,7 +7,7 @@
 
 
 # files
-keys.js
+/src/keys.js
 
 # testing
 /coverage

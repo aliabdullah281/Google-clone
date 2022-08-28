@@ -34,18 +34,17 @@ const Search = ({ hideButtons = false }) => {
             <MicIcon></MicIcon>
         </div>
 
-    {!hideButtons ? (
- <div className='search__buttons'> 
- <Button type="submit" variant="outlined" onClick={search}> Google Search </Button>
- <Button variant="outlined"> I'm Feelling Lucky</Button>
-</div>
-    ):(
-        <div className='search__buttons'> 
-        <Button className='search__buttonsHidden' type="submit" variant="outlined" onClick={search}> Google Search </Button>
-        <Button className='search__buttonsHidden' variant="outlined"> I'm Feelling Lucky</Button>
-    </div>
-    )}
-       
+        {!hideButtons ? (
+            <div className='search__buttons'> 
+                <Button type="submit" variant="outlined" onClick={search}> Google Search </Button>
+                <Button variant="outlined"> I'm Feelling Lucky</Button>
+            </div>
+        ):(
+            <div className='search__buttons'> 
+                <Button className='search__buttonsHidden' type="submit" variant="outlined" onClick={search}> Google Search </Button>
+                <Button className='search__buttonsHidden' variant="outlined"> I'm Feelling Lucky</Button>
+            </div>
+        )}
     </form>
   )
 }

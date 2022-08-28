@@ -11,16 +11,12 @@ import SearchPage from './pages/SearchPage';
 function App() {
   return (
     <div className="App">
-     
-     {/* <Home /> */}
-     <BrowserRouter>
-    <Routes>
-      <Route path="/search" element={<SearchPage />} />
-      <Route path="/" element={<Home />} />
-
-    </Routes>
-  </BrowserRouter>
-     
+        <BrowserRouter>
+          <Routes>
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
